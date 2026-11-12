@@ -1,0 +1,18 @@
+{
+  "name": "together-20506",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "db:init": "node server/scripts/init-db.mjs",
+    "build": "npm --prefix client run build",
+    "start": "node server/index.js",
+    "dev": "node scripts/dev.mjs",
+    "lint": "npm --prefix client run lint",
+    "test": "node --test server/test/integration.test.mjs"
+  }
+}
