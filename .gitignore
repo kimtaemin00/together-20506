@@ -1,0 +1,27 @@
+# 설치된 패키지와 빌드 결과
+**/node_modules/
+**/dist/
+
+# 개인 환경변수와 비밀키; 빈 예시 파일만 공유
+**/.env
+**/.env.*
+!**/.env.example
+
+# 로그와 OS 임시 파일
+**/*.log
+**/.DS_Store
+
+# 로컬 개인정보·DB 백업·인증서 (DB 구조 SQL은 별도로 커밋 가능)
+**/backups/
+**/dumps/
+**/*.sql.gz
+**/*.dump
+**/*.sqlite
+**/*.sqlite3
+**/*.db
+**/*.pem
+**/*.key
+server/uploads/
+
+# 설치 도구의 프로젝트별 다운로드 캐시
+**/.npm-cache/
